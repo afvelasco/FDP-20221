@@ -1,20 +1,5 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname calculaEdad) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
-; Autor: Andrés Fernando Velasco
-; Fecha: 24/marzo/2022
 ; Se trata de elaborar un programa que lea el año de nacimiento de una
 ; persona e imprima la edad a cumplir durante el presente año (2022).
-; Contrato:
-; calculaEdad: numero         -> numero
-;              año Nacimiento    Edad al finalizar 2022
-; Propósito: Resolver el enunciado
-; Plantilla:
-; (define (calculaEdad anioNacimiento) ...)
-; Ejemplo:
-; (calculaEdad 1998) debe retornar 24
-; Programa:
-(define (calculaEdad anioNacimiento)
-  (- 2022 anioNacimiento))
-; Prueba:
-(check-expect (calculaEdad 1998) 24)
